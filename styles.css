@@ -1,0 +1,93 @@
+.navbar {
+    background-color: #F5E6D3;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #2D5016;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #D4AF37;
+}
+
+.hero {
+    background-image: url('hero-background.jpg');
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F5E6D3;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.about, .menu, .gallery, .testimonials, .contact {
+    padding: 50px;
+    background-color: #F5E6D3;
+    color: #2D5016;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #2D5016;
+    color: #F5E6D3;
+    text-align: center;
+    padding: 20px;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #D4AF37;
+    color: #2D5016;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+.floating-button:hover {
+    background-color: #2D5016;
+    color: #F5E6D3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .hero {
+        height: 70vh;
+    }
+    .about, .menu, .gallery, .testimonials, .contact {
+        padding: 30px;
+    }
+}
